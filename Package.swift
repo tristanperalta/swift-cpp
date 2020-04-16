@@ -14,10 +14,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "wrap",
-            dependencies: ["junk"]),
+            dependencies: ["CJunk"]),
         .target(
-            name: "junk",
-            path: "Sources/junk"),
+            name: "CJunk",
+            path: "Sources/CJunk"),
         .testTarget(
             name: "wrapTests",
             dependencies: ["wrap"]),
